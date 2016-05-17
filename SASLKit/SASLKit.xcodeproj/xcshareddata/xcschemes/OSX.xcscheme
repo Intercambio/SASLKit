@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F60703471CEB107B00FBEE02"
-               BuildableName = "SASLKitOSX.framework"
+               BuildableName = "SASLKit.framework"
                BlueprintName = "SASLKitOSX"
                ReferencedContainer = "container:SASLKit.xcodeproj">
             </BuildableReference>
@@ -44,7 +44,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F60703471CEB107B00FBEE02"
-            BuildableName = "SASLKitOSX.framework"
+            BuildableName = "SASLKit.framework"
             BlueprintName = "SASLKitOSX"
             ReferencedContainer = "container:SASLKit.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F60703471CEB107B00FBEE02"
-            BuildableName = "SASLKitOSX.framework"
+            BuildableName = "SASLKit.framework"
             BlueprintName = "SASLKitOSX"
             ReferencedContainer = "container:SASLKit.xcodeproj">
          </BuildableReference>
@@ -84,7 +84,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F60703471CEB107B00FBEE02"
-            BuildableName = "SASLKitOSX.framework"
+            BuildableName = "SASLKit.framework"
             BlueprintName = "SASLKitOSX"
             ReferencedContainer = "container:SASLKit.xcodeproj">
          </BuildableReference>
