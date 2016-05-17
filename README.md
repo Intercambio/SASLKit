@@ -84,7 +84,7 @@ If the mechanism needs credentials to complete the authentication, it asks the d
 
 ## Contributing
 
-PureXML uses [git-flow](http://nvie.com/posts/a-successful-git-branching-model/) as branching model. New feature should always be started from the `develop` branch.
+SASLKit uses [git-flow](http://nvie.com/posts/a-successful-git-branching-model/) as branching model. New feature should always be started from the `develop` branch.
 
 To contribute:
 
