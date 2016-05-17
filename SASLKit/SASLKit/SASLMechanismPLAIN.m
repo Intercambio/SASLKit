@@ -52,24 +52,24 @@
     dispatch_async(_queue, ^{
         if (_responseHandler) {
             if (username && password) {
-                
+
                 _completion = completion;
-                
+
                 unsigned short nul[] = {0};
-                
+
                 NSMutableData *response = [[NSMutableData alloc] init];
-                
+
                 [response appendBytes:nul length:1];
                 [response appendData:[username dataUsingEncoding:NSUTF8StringEncoding]];
-                
+
                 [response appendBytes:nul length:1];
                 [response appendData:[password dataUsingEncoding:NSUTF8StringEncoding]];
-                
+
                 _responseHandler(response, NO);
             } else {
-                
+
                 _responseHandler(nil, YES);
-                
+
                 if (completion) {
                     NSString *errorMessage = [NSString stringWithFormat:@"Abort authentication for '%@', because either username or password is nil.", _hostname];
                     NSError *error = [NSError errorWithDomain:SASLMechanismErrorDomain
@@ -87,7 +87,7 @@
 {
     dispatch_async(_queue, ^{
         if (_responseHandler) {
-            
+
             _responseHandler(nil, YES);
             _responseHandler = nil;
         }
@@ -101,7 +101,7 @@
     dispatch_async(_queue, ^{
         _hostname = hostname;
         _responseHandler = responseHandler;
-        
+
         dispatch_queue_t queue = self.delegateQueue ?: dispatch_get_main_queue();
         dispatch_async(queue, ^{
             if ([self.delegate respondsToSelector:@selector(SASLMechanismNeedsCredentials:)]) {
