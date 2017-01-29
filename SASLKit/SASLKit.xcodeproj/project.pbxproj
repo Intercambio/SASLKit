@@ -467,7 +467,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = SASLKit/module.modulemap;
-				PRODUCT_BUNDLE_IDENTIFIER = org.internetslum.SASLKit;
+				PRODUCT_BUNDLE_IDENTIFIER = im.intrecambio.SASLKit;
 				PRODUCT_NAME = SASLKit;
 				SKIP_INSTALL = YES;
 			};
@@ -486,7 +486,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = SASLKit/module.modulemap;
-				PRODUCT_BUNDLE_IDENTIFIER = org.internetslum.SASLKit;
+				PRODUCT_BUNDLE_IDENTIFIER = im.intrecambio.SASLKit;
 				PRODUCT_NAME = SASLKit;
 				SKIP_INSTALL = YES;
 			};
@@ -528,7 +528,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MODULEMAP_FILE = SASLKit/module.modulemap;
-				PRODUCT_BUNDLE_IDENTIFIER = org.internetslum.SASLKit;
+				PRODUCT_BUNDLE_IDENTIFIER = im.intrecambio.SASLKit;
 				PRODUCT_NAME = SASLKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -551,7 +551,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MODULEMAP_FILE = SASLKit/module.modulemap;
-				PRODUCT_BUNDLE_IDENTIFIER = org.internetslum.SASLKit;
+				PRODUCT_BUNDLE_IDENTIFIER = im.intrecambio.SASLKit;
 				PRODUCT_NAME = SASLKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -605,6 +605,7 @@
 				F607033F1CEB105A00FBEE02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F60703401CEB105A00FBEE02 /* Build configuration list for PBXNativeTarget "SASLKitiOSTests" */ = {
 			isa = XCConfigurationList;
@@ -613,6 +614,7 @@
 				F60703421CEB105A00FBEE02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F60703591CEB107C00FBEE02 /* Build configuration list for PBXNativeTarget "SASLKitOSX" */ = {
 			isa = XCConfigurationList;
@@ -621,6 +623,7 @@
 				F607035B1CEB107C00FBEE02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F607035C1CEB107C00FBEE02 /* Build configuration list for PBXNativeTarget "SASLKitOSXTests" */ = {
 			isa = XCConfigurationList;
@@ -629,6 +632,7 @@
 				F607035E1CEB107C00FBEE02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
