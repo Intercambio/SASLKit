@@ -1,6 +1,0 @@
-framework module SASLKit {
-    umbrella header "SASLKit.h"
-    
-    export *
-    module * { export * }
-}

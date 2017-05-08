@@ -48,7 +48,6 @@
 		F607033A1CEB105A00FBEE02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F60703481CEB107B00FBEE02 /* SASLKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SASLKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F60703511CEB107C00FBEE02 /* SASLKitOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SASLKitOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F607035F1CEB11C200FBEE02 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		F60703631CEB127A00FBEE02 /* SASLMechanism.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASLMechanism.h; sourceTree = "<group>"; };
 		F60703641CEB127A00FBEE02 /* SASLMechanism.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SASLMechanism.m; sourceTree = "<group>"; };
 		F60703691CEB12B900FBEE02 /* SASLMechanismPLAIN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASLMechanismPLAIN.h; sourceTree = "<group>"; };
@@ -136,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				F607032E1CEB105A00FBEE02 /* Info.plist */,
-				F607035F1CEB11C200FBEE02 /* module.modulemap */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -245,7 +243,7 @@
 		F60703201CEB105A00FBEE02 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Tobias Kräntzer";
 				TargetAttributes = {
 					F60703281CEB105A00FBEE02 = {
@@ -378,8 +376,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -427,8 +427,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -460,6 +462,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -467,7 +470,6 @@
 				INFOPLIST_FILE = SASLKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = SASLKit/module.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = im.intrecambio.SASLKit;
 				PRODUCT_NAME = SASLKit;
 				SKIP_INSTALL = YES;
@@ -478,6 +480,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -485,7 +488,6 @@
 				INFOPLIST_FILE = SASLKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = SASLKit/module.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = im.intrecambio.SASLKit;
 				PRODUCT_NAME = SASLKit;
 				SKIP_INSTALL = YES;
@@ -526,7 +528,6 @@
 				INFOPLIST_FILE = SASLKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = SASLKit/module.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = im.intrecambio.SASLKit;
 				PRODUCT_NAME = SASLKit;
 				SDKROOT = macosx;
@@ -548,7 +549,6 @@
 				INFOPLIST_FILE = SASLKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = SASLKit/module.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = im.intrecambio.SASLKit;
 				PRODUCT_NAME = SASLKit;
 				SDKROOT = macosx;
